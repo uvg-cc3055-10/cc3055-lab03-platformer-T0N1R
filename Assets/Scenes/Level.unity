@@ -1276,6 +1276,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 158937478}
+  anim: {fileID: 1762987939}
 --- !u!95 &1762987939
 Animator:
   serializedVersion: 3

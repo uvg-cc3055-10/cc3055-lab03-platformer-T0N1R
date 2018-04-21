@@ -11,6 +11,7 @@ public class Character : MonoBehaviour {
     private float speed = 5f;
     private float jumpForce = 250f;
     private bool facingRight = true;
+    public Animator anim;
 
 	// Use this for initialization
 	void Start () {
@@ -34,5 +35,7 @@ public class Character : MonoBehaviour {
             rb2d.AddForce(Vector2.up*jumpForce);
         }
 
-	}
+        anim.SetFloat("Speed", Mathf.Abs(move));
+
+    }
 }
